@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>recuperar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Recuperar contraseña</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-text>Indique su correo electronico</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-input type="email" [(ngModel)]="recover.mail"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-button expand="full" click="enviar()">Recuperar</ion-button> 
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
